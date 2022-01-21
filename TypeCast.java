@@ -1,13 +1,13 @@
 /* Automatic casting */
 
-// public class TypeCast {
-//     public static void main(String[] args){
-//         int myInt = 7;
-//         double myDouble = myInt; // This is a automatic type casting method (int to double)
-//         System.out.println(myInt);
-//         System.out.println(myDouble);
-//     }
-// }
+public class TypeCast {
+    public static void main(String[] args){
+        int myInt = 7;
+        double myDouble = myInt; // This is a automatic type casting method (int to double)
+        System.out.println(myInt);
+        System.out.println(myDouble);
+    }
+}
 
 /* Manual casting */
 
