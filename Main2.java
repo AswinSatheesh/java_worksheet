@@ -10,7 +10,7 @@ public class Main2 {
         System.out.println(divResult);
         System.out.println(sum > 0 && divResult < 5);
         System.out.println(sum < 0 || divResult > 5);
-
+        
 
     }
     
