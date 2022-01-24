@@ -1,5 +1,5 @@
 public class OopsUpdate {
-    int x ;
+    int x =20 ;  // if we use 'final'  then  can't able to override the existing values. 
 
     public static void main(String[] args){
         OopsUpdate myobj = new OopsUpdate();
