@@ -24,5 +24,4 @@ class RedmiMi4i extends Phone{
         System.out.println("3 Gb, Android 9");
     }
 }
-
 }
