@@ -1,7 +1,7 @@
 public class SuperB extends SuperA {
    int a;
    void display(){
-    //    System.out.println("It's SuperB");
+       System.out.println("It's SuperB");
        super.display();
    } 
 
