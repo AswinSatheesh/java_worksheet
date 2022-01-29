@@ -14,7 +14,7 @@ public class ArrayListLoop {
             System.out.println(names.get(i));   // This is how for loop works
         }  */
 
-        Collections.sort(names);
+        Collections.sort(names);  // With the help of 'collections' class we can sort(alphabetically and numerically) the ArrayList elements
 
         for (String i : names){
             System.out.println(i);  //This is how for each loop works!!
