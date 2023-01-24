@@ -18,7 +18,7 @@ public class ArrayUtil{
         System.out.println("last array element : "+myArray[myArray.length-1]);
     }
     public static void main(String[] args){
-        ArrayUtil arrutil = new ArrayUtil();
-        arrutil.arrayDemo();
+        ArrayUtil arrutil = new ArrayUtil(); 
+        arrutil.arrayDemo();//or we can initialize array directly while calling function like --- arrutil.arrayDemo(new int[] {10,20,30,40,50});
     }
 }
