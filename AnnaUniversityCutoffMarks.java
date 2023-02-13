@@ -2,7 +2,7 @@ import java.util.*;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class Sample{
+public class AnnaUniversityCutoffMarks{
 
     public static void main(String[] args) {
 
@@ -57,11 +57,11 @@ public class Sample{
             System.out.println("\n");
 
         }
+
+        //Initializing hash map
          HashMap<Integer, Integer> capitalCities = new HashMap<Integer, Integer>();
-            
-        // for(int k=0; k< noOfStudent;k++){
-        //     System.out.println(reglist[k] + " : " + cutOff[k]);
-        // }
+        
+        //Asignnig key and value to hashmap
         for(i=0;i<noOfStudent;i++){
             capitalCities.put(cutOff[i],reglist[i]);
         }
@@ -69,24 +69,42 @@ public class Sample{
 
         Arrays.sort(cutOff);
  
-        // Reversing the array
+        // Reversing the array , calling funciton
         reverse(cutOff);
- 
-        // Printing the elements
-        System.out.println(Arrays.toString(cutOff));
         
+        //After arranging descending order showing cutOff marks and respective register number
         for (i = 0; i < noOfStudent; i++) {
             int regNumber = capitalCities.get(cutOff[i]);
             System.out.println("Cutoff: " + cutOff[i] + " Reglist: " + regNumber);
         }
 
-        String[] clgName = {"RTC","KRISHNA","KPG","SKV","RVS"};
+        String[] clgName = {"RTC","KRISHNA","KPG","PSG","Karapagam"}; //five clg name means needs to enter 5 student details, if 4 student means remove one clg name from this array, if more means add extra clg name.
         
-        // need to print reverse sorted first element with all clg names , second with one less clg name and so on
+        System.out.println("All Available colleges are : ");
+        System.out.println();
+        System.out.println("1.RTC");
+        System.out.println("1.KRISHNA");
+        System.out.println("1.KPG");
+        System.out.println("1.PSG");
+        System.out.println("1.Karapagam");
+        
+        System.out.println();
+        System.out.println();
+
+        //cutOff first element prints all clg names in String array and second element prints one minus from clg name array and so on.
+         for ( i = 0; i < cutOff.length; i++) {
+            int length = clgName.length - i;
+            System.out.println("Student who is having Cutoff " + cutOff[i] + " Available colleges are these :");
+            for ( int j = 0; j < length; j++) {
+                System.out.println(clgName[j]);
+            }
+            System.out.println("-----------------------------");
+        }
  
 
     }
 
+    //function to reverse the array in descending order
     public static void reverse(int[] array)
     {
  
